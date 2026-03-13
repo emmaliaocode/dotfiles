@@ -1,0 +1,21 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.rdsec.trendmicro.com/prod/aiendpoint/",
+    "ANTHROPIC_AUTH_TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQUktMTc3MTgyODI0OTQ5MCIsInJvbGVzIjpbIjM1Il0sInVzZXJfaWQiOjQxNzQsInVzZXJuYW1lIjoiZW1tYV9saWFvIiwicm9sZV9uYW1lcyI6WyJST1AtYWllbmRwb2ludC1Vc2VyIl0sInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE3Nzk2MDQyNTAsImp0aSI6IjMxYjVjNzJjLTEwODEtMTFmMS1hNTIxLWRhMDMzYzBlZDFjMyIsInZlcnNpb24iOiIyMDI0LTExLTAxIn0.JaPJ-FtWXqaIyaQdVJiZDgC0X_-N2AZHNFAORzEvyPg",
+    "ANTHROPIC_MODEL": "claude-4.6-opus-aws",
+    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS": "1",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "model": "claude-4.6-opus-aws",
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/emma_liao/.claude/statusline/statusline-command.sh"
+  },
+  "alwaysThinkingEnabled": false,
+  "teammateMode": "tmux",
+  "enabledPlugins": {
+    "skill-creator@claude-plugins-official": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "notion": {
+    "type": "http",
+    "url": "https://mcp.notion.com/mcp"
+  },
+  "grafana": {
+    "command": "uvx",
+    "args": [
+      "mcp-grafana"
+    ],
+    "env": {
+      "GRAFANA_URL": "your_grafana_url",
+      "GRAFANA_SERVICE_ACCOUNT_TOKEN": "your_grafana_service_account_token"
+    }
+  },
+  "kubernetes": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "mcp-server-kubernetes"
+    ],
+    "env": {}
+  },
+  "confluence": {
+    "type": "sse",
+    "url": "https://mcp.atlassian.com/v1/sse"
+  },
+  "puppeteer": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-puppeteer"
+    ],
+    "env": {
+      "PUPPETEER_LAUNCH_OPTIONS": "{\"userDataDir\":\"~/.puppeteer-profile\"}"
+    }
+  }
+}
