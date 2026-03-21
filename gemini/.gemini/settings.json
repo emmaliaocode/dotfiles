@@ -1,0 +1,27 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "model": {
+    "name": "auto-gemini-3"
+  },
+  "ui": {
+    "footer": {
+      "items": [
+        "workspace",
+        "git-branch",
+        "model-name",
+        "quota",
+        "context-used",
+        "sandbox"
+      ]
+    }
+  },
+  "mcpServers": {
+    "notion": {
+      "url": "https://mcp.notion.com/mcp"
+    }
+  }
+}
