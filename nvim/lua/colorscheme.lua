@@ -1,4 +1,4 @@
--- define your colorscheme here
+-- Define colorscheme
 local colorscheme = 'github_dark_default'
 
 local is_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)

@@ -10,13 +10,5 @@ Personal development environment configuration.
 | [oh-my-zsh](./oh-my-zsh) | Oh My ZSH shell framework |
 | [nvim](./nvim) | Neovim editor |
 | [claude](./claude) | Claude Code CLI |
-
-## Syncing
-
-Copy live configs from this machine into the repo:
-
-```bash
-./sync.sh
-```
-
-This copies files from their standard locations (`~/.config/nvim`, `~/.claude`) into the repo directories. It also redacts secrets in `claude/.claude/mcp-servers.json`. After running, review and commit the changes yourself.
+| [gemini](./gemini) | Gemini CLI |
+| [tmux](./tmux) | Tmux terminal multiplexer |

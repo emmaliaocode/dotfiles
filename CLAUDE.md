@@ -2,15 +2,23 @@
 
 ## Repository Overview
 
-This is a personal dotfiles repo containing configuration for iTerm2, Oh My ZSH, and Neovim. There is no build system, test suite, or application code — it is purely configuration and documentation.
+This is a personal dotfiles repo containing configuration for iTerm2, Oh My ZSH, Neovim, Claude Code, Gemini CLI, and tmux. There is no build system, test suite, or application code — it is purely configuration and documentation.
 
 ## Syncing Config from Local Machine
 
-When a user asks to sync config from the local machine, follow these steps for each directory:
+When a user asks to sync configs for a specific tool, run the corresponding commands below. After copying, redact any sensitive values per the Sensitive Data rules.
 
-- **`claude/.claude/mcp.json`** — Read the MCP server config from `~/.claude.json` (under the `mcpServers` key), redact sensitive values per the Sensitive Data rules, and write it to `claude/.claude/mcp.json`.
-- **`claude/.claude/` (other files)** — For each file that already exists in `claude/.claude/` in this repo (excluding `mcp.json`), copy the corresponding file from `~/.claude/` on the local machine. Do not add files that don't already exist in this repo.
-- **`nvim/`** — Copy files from `~/.config/nvim/`, matching only paths that already exist in `nvim/` in this repo. Do not add files that don't already exist in this repo.
+- **`tmux/`** — Copy files from `~/.config/nvim/`, matching only paths that already exist in `nvim/` in this repo.
+- **`claude/`** —
+  - `cp ~/.claude/settings.json claude/.claude/settings.json`
+  - `cp -r ~/.claude/statusline claude/.claude/statusline`
+  - For `claude/.claude/mcp.json`: read the MCP server config from `~/.claude.json` (under the `mcpServers` key), redact sensitive values per the Sensitive Data rules, and write it to `claude/.claude/mcp.json`.
+- **`nvim/`** — Copy files from `~/.config/nvim/`, matching only paths that already exist in `nvim/` in this repo.
+- **`gemini/`** —
+  - `cp ~/.gemini/settings.json gemini/.gemini/settings.json`
+  - `cp ~/.gemini/antigravity/mcp_config.json gemini/antigravity/mcp_config.json`
+
+For all tools: only update files that already exist in the repo. Do not add new files unless explicitly asked. Remove any repo files (excluding READMEs) whose source counterpart no longer exists. After copying, review every file for sensitive values and replace them with `your_` placeholders.
 
 ## README Style Guide
 

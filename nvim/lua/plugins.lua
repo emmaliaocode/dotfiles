@@ -13,10 +13,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  -- install colorscheme
+  -- Navigator
+  'christoomey/vim-tmux-navigator',
+  -- Colorscheme
   'projekt0n/github-nvim-theme',
-  -- -- lsp
-  -- 'williamboman/mason.nvim',
-	-- 'williamboman/mason-lspconfig.nvim',
-	-- 'neovim/nvim-lspconfig',
 })
