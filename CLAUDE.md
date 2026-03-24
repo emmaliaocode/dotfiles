@@ -8,7 +8,7 @@ This is a personal dotfiles repo containing configuration for iTerm2, Oh My ZSH,
 
 When a user asks to sync configs for a specific tool, run the corresponding commands below. After copying, redact any sensitive values per the Sensitive Data rules.
 
-- **`tmux/`** — Copy files from `~/.config/nvim/`, matching only paths that already exist in `nvim/` in this repo.
+- **`tmux/`** — Copy files from `~/.config/tmux/`, matching only paths that already exist in `tmux/` in this repo.
 - **`claude/`** —
   - `cp ~/.claude/settings.json claude/.claude/settings.json`
   - `cp -r ~/.claude/statusline claude/.claude/statusline`
