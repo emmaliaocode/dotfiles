@@ -20,6 +20,16 @@ When a user asks to sync configs from local to the project, run the correspondin
 
 For all tools: only update files that already exist in the repo. Do not add new files unless explicitly asked. Remove any repo files (excluding READMEs) whose source counterpart no longer exists. After copying, review every file for sensitive values and replace them with `your_` placeholders.
 
+## Keeping READMEs in Sync
+
+Whenever config files in a tool's subdirectory are added, removed, or modified (by any sync operation or manual edit), automatically update that tool's `README.md` to reflect the current config. This includes but is not limited to:
+- Plugins, themes, or extensions added or removed
+- Keybindings or shortcuts changed
+- Settings or options changed
+- New config sections or files introduced
+
+Read the updated config files, compare against the existing README content, and apply only the necessary edits. Follow the README Style Guide when making changes. Do not rewrite sections that are already accurate.
+
 ## Syncing Config from Project to Local
 
 When a user asks to sync configs from the project to local, copy repo config files to the local machine using the reverse of the local-to-project path mappings above.
